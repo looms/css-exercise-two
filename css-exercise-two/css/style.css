@@ -7,8 +7,30 @@ body {
   text-decoration: none;
 }
 
+
+ /* link test*/
+.a {
+  text-decoration: none;
+}
+/*pseudo link*/
+a:link,
+a:visited {
+    color: #5b5b5b;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+  color:hotpink;
+  text-decoration: none;
+}
+.left, .right {
+  float: left;
+  width: 50%;
+}
+
 title {
-  font-size:22px;
+  font-size:26px;
   text-transform: none; /* Reads "Bloc Bulletin"*/
 }
 
@@ -18,13 +40,9 @@ nav {
   background-color: ##9d9da0;
   float: left;
   position: fixed;
-  font-style: oblique;
   width: 100%;
-  /*pseudo link*/
-  a:link { color:#0070BB; } /* unvisited */
-  a:visited { color:#0070BA; } /* visited */
-  a:hover { color:#0070BC; } /* mouse over */
-  a:active { color:#0070BD; } /* selected */
+
+
 }
 
 /* Reads "Article Titlecase"*/
@@ -47,13 +65,15 @@ article, .container {
 
 /*The article itself*/
 article {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.01em;
   font-kerning: normal;
+  margin: 10px 0px -40px 30px;
+  padding: 50px 60px 10px 400px;
 }
 
 .logo {
-  margin: 20px;
+  margin: 60px;
   width: 100px;
 }
 
@@ -65,10 +85,6 @@ article {
   width: 70%;
 }
 
-.left, .right {
-  float: left;
-  width: 50%;
-}
 
 .right {
   float: right;
@@ -81,15 +97,11 @@ ul {
 
 li {
   float: right;
-  text-decoration: none;
   padding: 30px;
-}
 
-article {
-  padding-top: 100px;
 }
 
 .container {
-  margin: 0 auto;
+  float: left;
   width: 50%;
 }
